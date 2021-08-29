@@ -8,4 +8,4 @@
 5. [Методы массивов - reduce, map итд](https://olovyannikov.github.io/easy-js-features/dom-array-methods)
 6. [Сервис для поиска рецептов еды - fetch, map итд](https://olovyannikov.github.io/easy-js-features/meal-finder)
 7. [Off-canvas меню и модальное окно](https://olovyannikov.github.io/easy-js-features/slider-modal)
-8. [Звездный рейтинг](https://olovyannikov.github.io/easy-js-features/star-rating)
+8. [Звездный рейтинг](https://olovyannikov.github.io/easy-js-features/star-rating) 
