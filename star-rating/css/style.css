@@ -1,0 +1,224 @@
+@import "normalize.css";
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", "Helvetica Neue", sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    height: 100%;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-family: inherit;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0 0 30px 0;
+}
+
+.container {
+    padding: 50px;
+    min-height: 100%;
+}
+
+.form {
+
+}
+
+.form_margin {
+    margin: 0 0 30px 0;
+}
+
+.form__item {
+    margin: 0 0 30px 0;
+}
+
+.form__label {
+    margin: 0 0 10px 0;
+}
+
+.form__btn {
+    height: 50px;
+    background: #77608d;
+    padding: 0 30px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Simple rating */
+.simple-rating {
+    position: relative;
+    font-size: 40px;
+    display: inline-block;
+}
+
+.simple-rating::before {
+    content: '★★★★★';
+    display: block;
+}
+
+.simple-rating__items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.simple-rating__item {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.simple-rating__label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #fff;
+}
+
+.simple-rating__label::before {
+    content: '★';
+    display: block;
+    transition: color .3s ease 0s;
+}
+
+.simple-rating__item:checked,
+.simple-rating__item:checked ~ .simple-rating__label {
+    color: #ffd300;
+}
+
+.simple-rating__label:hover,
+.simple-rating__label:hover ~ .simple-rating__label,
+.simple-rating__label:checked ~ .simple-rating__label:hover {
+    color: #ffef9f;
+}
+
+/* Rating with JS */
+
+:root {
+    --ratingSize: 250px;
+    --starActive: #1f99cd;
+    --starInactive: #082532;
+}
+
+.rating {
+    display: flex;
+    align-items: flex-end;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.rating__body {
+    position: relative;
+}
+
+.rating__body::before {
+    content: '⭐⭐⭐⭐⭐';
+    display: block;
+}
+
+.rating__active {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.rating__active::before {
+    content: '⭐⭐⭐⭐⭐';
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffd300;
+}
+
+.rating__items {
+    display: flex;
+    position: absolute;
+}
+
+.rating__item {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0;
+}
+
+.rating__value {
+    font-size: 50%;
+    line-height: 1;
+    padding-left: 10px;
+}
+
+/**/
+
+.star-rating {
+    height: 90px;
+    position: relative;
+    width: 450px;
+}
+.star-rating:before {
+    background-image: url("data:image/svg+xml,%3Csvg width='28' height='26' viewBox='0 0 28 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.064 0.693314C13.2405 0.33684 13.6039 0.11084 14.0012 0.11084C14.3984 0.11084 14.7625 0.33684 14.9384 0.693314L18.2999 7.50535C18.4519 7.81348 18.7466 8.02724 19.0874 8.07675L26.6048 9.16889C26.9991 9.22597 27.3253 9.50207 27.4482 9.88009C27.5711 10.2581 27.4686 10.674 27.1837 10.9513L21.7446 16.2541C21.4982 16.4941 21.3858 16.8401 21.4435 17.1791L22.7272 24.6668C22.7936 25.0594 22.6335 25.4554 22.3108 25.6896C21.9887 25.9226 21.5629 25.9535 21.2099 25.7694L14.4858 22.2338C14.1818 22.0736 13.8177 22.0736 13.5131 22.2338L6.789 25.7688C6.43719 25.9535 6.01023 25.9232 5.68813 25.6896C5.36602 25.456 5.20525 25.0594 5.27224 24.6668L6.55601 17.1791C6.61426 16.8401 6.50126 16.4941 6.25487 16.2541L0.815731 10.9513C0.530901 10.6734 0.428386 10.2581 0.551288 9.88009C0.67419 9.50207 1.00096 9.22597 1.39529 9.16889L8.91387 8.07675C9.25403 8.02724 9.54876 7.81348 9.70079 7.50476L13.064 0.693314Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='1.00012' y1='13' x2='28.0001' y2='13' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='1' stop-color='%23CED7E0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 90px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 90px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 450px;
+}
+.star-rating > span {
+    display: block;
+    text-indent: -10000px;
+    width: 450px;
+    height: 90px;
+    position: absolute;
+    overflow: hidden;
+}
+.star-rating > span:before {
+    background-image: url("../img/svg/star2.svg");
+    background-repeat: repeat-x;
+    background-size: 90px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 90px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-indent: 10000px;
+    top: 0;
+}

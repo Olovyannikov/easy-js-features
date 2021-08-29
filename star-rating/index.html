@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Star Rating</title>
+</head>
+<body>
+
+
+<section class="container">
+
+    <h1>Star rating</h1>
+    <form action="" class="form form_margin">
+        <div class="form__item">
+            <h2 class="form__label">Simple rating (without JS)</h2>
+            <div class="simple-rating">
+                <div class="simple-rating__items">
+                    <input class="simple-rating__item" id="simpleRating5" name="simpleRating" type="radio" value="5">
+                    <label class="simple-rating__label" for="simpleRating5"></label>
+                    <input class="simple-rating__item" id="simpleRating4" name="simpleRating" type="radio" value="4">
+                    <label class="simple-rating__label" for="simpleRating4"></label>
+                    <input class="simple-rating__item" id="simpleRating3" name="simpleRating" type="radio" value="3">
+                    <label class="simple-rating__label" for="simpleRating3"></label>
+                    <input class="simple-rating__item" id="simpleRating2" name="simpleRating" type="radio" value="2">
+                    <label class="simple-rating__label" for="simpleRating2"></label>
+                    <input checked class="simple-rating__item" id="simpleRating1" name="simpleRating" type="radio"
+                           value="1">
+                    <label class="simple-rating__label" for="simpleRating1"></label>
+                </div>
+            </div>
+        </div>
+        <div class="form__item">
+            <h2 class="form__label">Accurate rating (JS)</h2>
+            <div class="rating">
+                <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                        <input class="rating__item" name="rating" type="radio" value="1">
+                        <input class="rating__item" name="rating" type="radio" value="2">
+                        <input class="rating__item" name="rating" type="radio" value="3">
+                        <input class="rating__item" name="rating" type="radio" value="4">
+                        <input class="rating__item" name="rating" type="radio" value="5">
+                    </div>
+                </div>
+                <div class="rating__value">3.6</div>
+            </div>
+        </div>
+
+        <button class="form__btn btn" type="submit">Отправить</button>
+    </form>
+    <div class="star-rating">
+        <span style="width: 65%"></span>
+    </div>
+
+    <div class="star-rating">
+        <span style="width: 78%"></span>
+    </div>
+
+
+    </div>
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>

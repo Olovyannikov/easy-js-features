@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Modal DOM & slider</title>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="nav">
+    <div class="nav__logo">
+        <img alt="user" src="https://randomuser.me/api/portraits/men/76.jpg">
+    </div>
+    <ul class="nav__list">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">Portfolio</a></li>
+        <li class="nav__item"><a href="#">Blog</a></li>
+        <li class="nav__item"><a href="#">Contact Me</a></li>
+    </ul>
+</nav>
+
+<header class="header">
+    <button class="header__toggle toggle" id="toggle">
+        <span aria-hidden="true" class="toggle__bar"></span>
+    </button>
+
+    <h1 class="header__title title">My Landing Page</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores dolorum exercitationem iure
+        laudantium quae quaerat, quibusdam quod vero voluptatibus? Architecto ducimus, est fuga maxime mollitia nemo
+        odio placeat voluptates?</p>
+
+    <button class="cta-btn" id="open">Sign Up</button>
+</header>
+
+<section class="container">
+    <h2>What is this landing page about?</h2>
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi doloremque illo molestias nam officia omnis quam quidem soluta voluptate voluptatum! Accusamus aliquam cupiditate expedita fugiat illo iusto laboriosam minima non.</span><span>A aspernatur aut beatae dolorum eaque eos est eum fuga fugiat labore maxime nulla numquam officia placeat, possimus quibusdam quis quos rem sapiente sed soluta tempora vel veniam voluptatem voluptatibus!</span><span>A accusamus accusantium architecto asperiores, atque beatae cupiditate delectus dolor dolore eveniet explicabo facilis ipsum itaque laudantium magni modi nihil nisi porro provident quae quasi repellat sit tempora vitae voluptatibus.</span><span>A accusamus asperiores consequatur, cupiditate, eaque enim modi odio pariatur, placeat porro quisquam recusandae saepe soluta suscipit ut. Accusantium facere illo laborum modi mollitia nam officia quia repellat temporibus vel.</span><span>Cupiditate dolorum enim et incidunt nisi non nostrum optio velit! Ea eligendi id placeat vero voluptatibus? Ex facilis fugiat temporibus. Aliquam atque debitis impedit in reprehenderit saepe voluptatem? Animi, repellendus.</span><span>Accusamus architecto dolorum ex nemo odio optio qui quo sunt voluptate. Blanditiis corporis et facilis fugit, minima minus mollitia sed sint soluta veritatis! Amet dolorum esse maiores modi officia porro.</span><span>Asperiores ducimus vitae voluptatum! Accusamus aperiam autem eligendi inventore nisi officia quam reiciendis reprehenderit, vel vitae. Aliquid amet cumque est, laboriosam libero molestiae mollitia nisi, nulla officiis perspiciatis recusandae vero.</span><span>Amet aspernatur consectetur corporis dolor ea eaque eius, enim error eum odio officia quos ratione reprehenderit sint, tempora totam veniam. Atque dolorum fugit numquam! A ex facilis incidunt modi qui!</span><span>Accusantium adipisci aliquid at, culpa deleniti dignissimos distinctio eaque eos ex fuga, ipsam iusto labore minus nihil nisi officiis praesentium, quas quis sapiente tempore! At dignissimos maiores quia saepe soluta!</span><span>Amet beatae dignissimos dolores ea magnam magni minima quae. Ad aliquid asperiores aut cumque maxime quas vero! Ad deleniti, facilis laboriosam minima molestias quaerat reiciendis, reprehenderit tempore ullam vero voluptates!</span><span>Atque, consectetur eos excepturi impedit libero officiis quae repudiandae vel velit voluptates. Cum, dolores error eum facere impedit in ipsa, maxime natus necessitatibus nisi nostrum perferendis, porro quam sequi sunt!</span><span>Dicta dignissimos doloribus explicabo harum ipsum iure nesciunt, nisi non perspiciatis porro possimus quisquam reiciendis repellat sequi similique ut veniam vero! Ad deleniti doloribus et inventore, magnam maxime nulla tempora.</span><span>Aut, consequatur fuga inventore molestiae molestias nisi numquam omnis reprehenderit sapiente tempore vel, velit. Animi autem consectetur delectus est impedit iste iusto nemo nostrum, quae quas. Atque itaque modi voluptate.</span><span>Blanditiis error quasi veniam vero. Aut autem blanditiis culpa doloremque minus officiis perspiciatis provident quibusdam quod voluptates? Aliquam autem blanditiis consequatur dicta ea earum iure labore numquam possimus, veniam. Molestias.</span><span>Aperiam delectus dolorum est illo molestias nisi quis sapiente? Amet, architecto doloremque illo impedit nostrum odit omnis quaerat quos ratione sequi sint tempora unde voluptate. Architecto quia quos reiciendis unde!</span><span>Animi at dicta earum illo labore laboriosam magni maxime, optio quasi quod, voluptates voluptatibus? Asperiores et obcaecati repellendus tenetur. Explicabo impedit ipsam libero nisi odio quam quis quos, sint voluptas.</span><span>Animi atque culpa dignissimos doloremque doloribus eaque eligendi, error, esse eum eveniet ex, excepturi explicabo minus odio repudiandae totam voluptas. Alias amet debitis dolorum illo illum non nostrum perspiciatis reprehenderit?</span><span>Blanditiis consectetur eum expedita ipsa molestiae necessitatibus numquam perspiciatis possimus praesentium quasi, repellendus tempora ullam vitae! Asperiores corporis dicta earum eveniet id perspiciatis, quaerat ratione repudiandae sint sunt tempora veniam?</span><span>Aliquam consequatur cumque, cupiditate hic impedit ipsa libero molestias nulla perferendis perspiciatis velit voluptas! Accusantium consequuntur, deserunt dolore dolorum explicabo, inventore ipsam nisi nobis nulla odio tempore, vitae voluptatibus voluptatum?</span><span>Aliquid, asperiores aspernatur atque beatae blanditiis deserunt illum incidunt iste, labore laboriosam nemo nihil nulla numquam officiis porro quaerat qui quibusdam quidem. Autem dolorum esse illo inventore molestias rem sit!</span>
+    </p>
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti doloribus ea et, id nisi omnis qui quidem veniam. Aut illum in incidunt iure provident quam reprehenderit voluptates. Illo in, possimus.</span><span>At, cumque dicta dolores inventore libero nobis odio optio perspiciatis quia quisquam, rem sed ullam ut? Accusantium animi aspernatur, aut commodi dolor dolorem earum laudantium, maiores nobis porro ratione velit.</span><span>Asperiores aut debitis, deserunt eos molestias natus sed sequi totam? A accusamus aliquam architecto asperiores, assumenda, aut cum debitis esse, facere iusto mollitia nemo perspiciatis quaerat quia rem repellat vero?</span><span>Ducimus laborum, soluta! Deserunt, eos, recusandae? Adipisci aperiam at blanditiis debitis dolores, dolorum eligendi enim facilis illo impedit laborum maxime modi nisi non nostrum omnis optio quas similique vitae, voluptates.</span><span>A accusantium autem corporis debitis enim error esse et exercitationem facilis inventore, molestiae officia omnis optio porro quos recusandae sunt veritatis. Aliquam commodi delectus, distinctio fugit ipsam iure obcaecati quae!</span><span>Blanditiis, esse est eum ex expedita fugit illo impedit nesciunt officiis pariatur quasi quis tempora vero? Earum et fuga harum laudantium sint. Doloribus harum ipsam magni officiis quis sint, voluptate.</span><span>Dignissimos exercitationem libero porro sint tenetur unde voluptatibus? A, alias assumenda debitis deleniti, dolorum esse fugit minima non tenetur, ullam voluptatem voluptatibus. Animi commodi ea illo magnam soluta? Soluta, suscipit.</span><span>Consequatur facere laboriosam necessitatibus quos totam velit vitae? A alias aliquam animi deserunt doloremque est ex hic ipsam, maxime nihil pariatur perspiciatis praesentium quas quis totam ut veritatis vero. Eum.</span><span>Incidunt ipsam nam nulla odit quaerat quidem recusandae rem voluptatibus. Delectus, dolorum ipsum omnis praesentium quisquam rem suscipit. Adipisci at atque blanditiis delectus nihil nisi obcaecati officiis quaerat quos vero.</span><span>At doloribus fugit necessitatibus nostrum officiis quas rerum, vero voluptates? Accusamus asperiores atque consectetur debitis esse, fugit illo inventore iure iusto laudantium nulla possimus quis ratione rem temporibus voluptates voluptatibus.</span><span>Ab dolore ducimus, eius exercitationem facilis fugit inventore iste iure iusto nesciunt nostrum odio omnis praesentium provident quasi quia quidem quisquam, quos recusandae reiciendis repellendus sunt tempore voluptatem. Minima, quia.</span><span>Amet aperiam asperiores autem dicta eos ex expedita minus nam nostrum, quod ratione repellendus reprehenderit sapiente. Amet dicta, ea, eaque est, facere illum incidunt nulla quis quos ratione sed similique!</span><span>A at autem fugit incidunt iure labore minima minus molestiae mollitia nihil non numquam omnis pariatur placeat quas repellendus reprehenderit repudiandae sapiente sequi temporibus, ullam voluptates voluptatibus. Beatae, expedita, iusto!</span><span>Architecto, beatae dolorum esse excepturi explicabo ipsam magnam molestias nemo nobis odit officiis optio praesentium provident reiciendis repellendus sunt suscipit totam velit! Asperiores dignissimos perspiciatis saepe veritatis vitae! Eos, perferendis.</span><span>Consequatur deserunt magni nulla perferendis. Consectetur corporis delectus dolore esse ex expedita mollitia nulla, numquam unde ut! Accusamus dicta, doloribus est illum ipsa, magnam nemo nulla pariatur rerum sed voluptas?</span><span>Consequatur dolor eius excepturi impedit laudantium, nulla tempora vel. Assumenda autem commodi corporis deserunt eos illo impedit laudantium nobis nulla qui. Cumque doloremque eaque laboriosam magnam molestias porro quae tempora.</span><span>Accusamus amet, dignissimos dolorum enim exercitationem ipsa laborum laudantium libero nam nemo odit officia, pariatur quae soluta suscipit velit voluptas voluptates. Accusamus architecto blanditiis eligendi illo maxime omnis perspiciatis repellendus?</span><span>Architecto eligendi iure nihil ratione recusandae totam, velit vitae voluptatum. Blanditiis culpa excepturi obcaecati officia ut? Accusantium distinctio, dolore impedit incidunt iusto minima molestias quam quasi quibusdam quo tenetur voluptatibus?</span><span>Asperiores consectetur consequatur culpa eaque est illo, laborum magnam, maiores obcaecati odio odit officia porro praesentium quam quo quos sed sint temporibus veniam voluptas. Dicta maiores porro quas sit? Fugit?</span><span>Alias corporis dolor dolorem fugiat ipsum perspiciatis praesentium quae quidem voluptatem! Ab cum eius eum explicabo inventore molestias nisi perspiciatis rerum voluptatibus voluptatum? Blanditiis consequuntur cupiditate laudantium, libero quas quod!</span>
+    </p>
+    <h2>Benefits</h2>
+    <ul>
+        <li>Lifetime Access</li>
+        <li>30 Day Money Back</li>
+        <li>Tailored Customer Support</li>
+    </ul>
+
+    <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque delectus deleniti, dolore eius et facilis laudantium magni natus perferendis quo tempora voluptates! Animi deleniti esse impedit obcaecati omnis voluptatum!</span><span>A aliquam aspernatur corporis delectus dignissimos et facilis hic ipsum magni, nemo neque nobis omnis placeat porro quam qui quis, quisquam repellendus reprehenderit, repudiandae sint sit tempora tempore ut vel.</span><span>Consequuntur earum impedit libero molestiae repellat! Molestias nulla provident quas ullam voluptatum! A adipisci amet aut autem exercitationem hic incidunt iure, maxime minus perspiciatis praesentium quaerat quidem quos sint voluptas!</span><span>Atque excepturi inventore nesciunt rem voluptatum. Hic qui repellat sed sequi totam. Corporis in ipsum natus, officia optio quaerat quod ratione rem ut? Atque dignissimos id minus perferendis porro repudiandae?</span><span>Aliquam culpa eaque error eum id in modi optio qui reprehenderit vero. Architecto asperiores autem consequatur cupiditate, dicta distinctio dolorum enim iste maxime minus molestias obcaecati, quas quisquam, sapiente vitae.</span><span>Ad corporis culpa dolore enim molestiae nobis non porro quas quasi rem repudiandae tempore veritatis, vero. Delectus fugit illo itaque sapiente tenetur, vel voluptate voluptatum! Beatae ipsam praesentium provident voluptas.</span><span>Doloribus explicabo labore nemo provident quos repellendus soluta tempore vel? Beatae expedita explicabo illo itaque minima nam nemo perferendis quod veritatis voluptate! Consequatur, ea incidunt iusto quas quis sequi temporibus.</span><span>Alias autem dolorem eum fugiat fugit harum hic illum in ipsa mollitia neque, quisquam ratione, sunt. Asperiores aspernatur blanditiis consequatur deleniti eius et, placeat qui sapiente sed sit soluta voluptatibus?</span><span>A ab ad aliquid aut autem, consectetur deserunt ea earum et magnam molestiae officiis omnis provident quasi quia quidem ratione recusandae reprehenderit sequi temporibus unde voluptate voluptatibus. Facere numquam, reprehenderit.</span><span>Asperiores, commodi doloribus et fugit maxime necessitatibus nesciunt odio perferendis perspiciatis placeat repellendus ullam voluptatem! Eaque ex minima molestiae nemo neque. Ipsam laborum libero maxime nesciunt rerum ullam vero. Magnam.</span>
+    </p>
+
+    <!--    Modal-->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button aria-label="close modal" class="close-btn" id="close">
+                <span class="close-btn__element"></span>
+            </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="modal-content">
+                <p>Register with us to get offers and more</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input class="form-input" id="name" placeholder="Enter Name" type="text">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input class="form-input" id="email" placeholder="Enter Email" type="email">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input class="form-input" id="password" placeholder="Enter Password" type="password">
+                    </div>
+                    <div>
+                        <label for="confirm">Confirm Password</label>
+                        <input class="form-input" id="confirm" placeholder="Confirm Password" type="password">
+                    </div>
+                    <input class="submit-btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

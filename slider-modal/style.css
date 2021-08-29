@@ -1,0 +1,275 @@
+:root {
+    --modal-duration: 1s;
+    --primary-color: #30336b;
+    --secondary-color: #be2edd;
+    --nav-width: 200px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+.nav {
+    background: var(--primary-color);
+    border-right: 2px solid rgba(200, 200, 200, 0.1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+}
+
+.nav__logo {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.nav__logo img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.nav__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav__item {
+    border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+.nav__item:first-of-type {
+    border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+.nav__item a {
+    padding: 20px;
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__item a:hover {
+    text-decoration: underline;
+}
+
+.show-nav {
+    transform: translateX(var(--nav-width));
+    overflow: hidden;
+}
+
+.header {
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 130%;
+    position: relative;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.header__title {
+    margin: 0;
+}
+
+.header p {
+    margin: 30px 0;
+}
+
+button, input[type='submit'] {
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.toggle {
+    width: 42px;
+    height: 42px;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.toggle__bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: .5s;
+}
+
+.toggle:focus {
+    outline: none;
+}
+
+.toggle__bar::after,
+.toggle__bar::before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    top: -7px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: .5s;
+}
+
+.toggle__bar::before {
+    top: unset;
+    bottom: -7px;
+}
+
+.toggle_active .toggle__bar {
+    background: none;
+}
+
+.toggle_active .toggle__bar::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.toggle_active .toggle__bar::before {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+.cta-btn {
+    padding: 12px 30px;
+    font-size: 20px;
+}
+
+.container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+}
+
+.close-btn {
+    cursor: pointer;
+    width: 52px;
+    height: 52px;
+    display: block;
+    padding: 0;
+}
+
+.close-btn__element {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 8px 12px;
+}
+
+.close-btn__element::after,
+.close-btn__element::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 18px;
+    height: 3px;
+    background: #fff;
+    transform: rotate(45deg);
+    left: 34%;
+    top: 50%;
+}
+
+.close-btn__element::after {
+    transform: rotate(-45deg);
+}
+
+.modal {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-container {
+    background: rgba(0,0,0, 0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.show-modal {
+    display: block;
+}
+
+.modal-header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+}
+
+.modal-header h3 {
+    margin: 0;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-form div {
+    margin: 15px 0;
+}
+
+.modal-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-form .form-input {
+    padding: 8px;
+    width: 100%;
+}
+
+.close-btn {
+    background: transparent;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

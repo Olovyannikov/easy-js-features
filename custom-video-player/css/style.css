@@ -1,0 +1,75 @@
+@import "progress.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+.video-container {
+    background: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #fff;
+}
+
+.screen {
+    cursor: pointer;
+    width: 60%;
+    background-color: #000;
+    border-radius: 10px 10px 0 0;
+}
+
+.controls {
+    width: 60%;
+    background: #333;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.controls .btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.controls .fa-play {
+    fill: #28a745;
+}
+
+.controls .fa-stop {
+    fill: #dc3545;
+}
+
+.controls .fa-pause {
+    fill: #fff;
+}
+
+.controls .timestamp {
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+    .screen, .controls {
+        width: 90%;
+    }
+}

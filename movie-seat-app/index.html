@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Movie seat app</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<main class="main">
+    <section class="main__movie movie">
+        <div class="movie__container">
+            <label for="movie">Pick a movie:</label>
+            <select class="movie__select" name="movie" id="movie">
+                <option value="10">Mortal Kombat ($10)</option>
+                <option value="12">Godzilla vs. Kong ($12)</option>
+                <option value="8">The Wolf ($8)</option>
+                <option value="9">Raya and The Last Dragon ($9)</option>
+            </select>
+        </div>
+
+        <ul class="movie__showcase showcase">
+            <li class="showcase__item">
+                <div class="seat"></div>
+                <small>N/A</small>
+            </li>
+            <li class="showcase__item">
+                <div class="seat seat_selected"></div>
+                <small>Selected</small>
+            </li>
+            <li class="showcase__item">
+                <div class="seat seat_occupied"></div>
+                <small>Occupied</small>
+            </li>
+        </ul>
+
+        <div class="container">
+            <div class="screen"></div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat seat_occupied"></div>
+                <div class="seat seat_occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat seat_occupied"></div>
+                <div class="seat seat_occupied"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat seat_occupied"></div>
+                <div class="seat seat_occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat seat_occupied"></div>
+                <div class="seat seat_occupied"></div>
+                <div class="seat seat_occupied"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+
+        <p class="text">You have selected <span id="count">0</span> seats for a price of <span id="total">0</span>$</p>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+
+</html>

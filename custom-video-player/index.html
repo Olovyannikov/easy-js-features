@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Player</title>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="video-container">
+    <h1>Custom Video Player</h1>
+    <video
+            class="screen"
+            id="video"
+            poster="img/poster.png"
+            src="video/gone.mp4">
+    </video>
+    <div class="controls">
+        <button class="btn" id="play">
+            <svg class="fa-play" height="24" viewBox="0 0 448 512" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"/>
+            </svg>
+        </button>
+        <button class="btn" id="stop">
+            <svg class="fa-stop" height="24" viewBox="0 0 448 512" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"/>
+            </svg>
+        </button>
+        <input class="progress" id="progress" max="100" min="0" step="0.1" type="range" value="0">
+        <span class="timestamp" id="timestamp">00:00</span>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
