@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta charset="UTF-8">
+    <title>Exchange Rate Calc</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<div class="app" id="app">
+    <img alt="Rate logo" class="money-img" src="img/money.png">
+    <h1>Exchange Rate Calculator</h1>
+    <p>Choose the currency and the amounts to get the exchange rate</p>
+
+    <section class="container">
+        <div class="currency">
+            <div class="currency-select">
+                <div class="currency-select">
+                    <label for="currency-one">
+                        <svg height="12" viewBox="0 0 400 400" width="12" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z"
+                                  fill="#000"/>
+                        </svg>
+                    </label>
+                    <select id="currency-one" name="currency-one">
+
+                    </select>
+                </div>
+            </div>
+            <input value="1" id="amount-one" placeholder="0" type="number" >
+        </div>
+
+        <div class="swap-rate-container">
+            <button class="btn" id="swap">
+                Swap
+            </button>
+            <div class="rate" id="rate"></div>
+        </div>
+
+        <div class="currency">
+            <div class="currency-select">
+                <label for="currency-two">
+                    <svg height="12" viewBox="0 0 400 400" width="12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z"
+                              fill="#000"/>
+                    </svg>
+                </label>
+                <select id="currency-two" name="currency-two">
+
+                </select>
+            </div>
+            <input id="amount-two" placeholder="0" type="number">
+        </div>
+    </section>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
