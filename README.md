@@ -10,3 +10,4 @@
 7. [Off-canvas меню и модальное окно](https://olovyannikov.github.io/easy-js-features/slider-modal)
 8. [Звездный рейтинг](https://olovyannikov.github.io/easy-js-features/star-rating)
 9. [Мини-игра по скоростной печати](https://olovyannikov.github.io/easy-js-features/typing-game) 
+10. [Калькулятор валют онлайн](https://olovyannikov.github.io/easy-js-features/exchange-rate-calculator)
