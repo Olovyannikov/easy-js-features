@@ -9,5 +9,7 @@
 6. [Сервис для поиска рецептов еды - fetch, map итд](https://olovyannikov.github.io/easy-js-features/meal-finder)
 7. [Off-canvas меню и модальное окно](https://olovyannikov.github.io/easy-js-features/slider-modal)
 8. [Звездный рейтинг](https://olovyannikov.github.io/easy-js-features/star-rating)
-9. [Мини-игра по скоростной печати](https://olovyannikov.github.io/easy-js-features/typing-game) 
+9. [Мини-игра по скоростной печати](https://olovyannikov.github.io/easy-js-features/typing-game)
 10. [Калькулятор валют онлайн](https://olovyannikov.github.io/easy-js-features/exchange-rate-calculator)
+11. [Expanding Cards](https://olovyannikov.github.io/easy-js-features/expanding-cards)
+12. [Speech Text Reader](https://olovyannikov.github.com/easy-js-features/speech-text-reader)

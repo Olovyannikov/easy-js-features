@@ -1,0 +1,69 @@
+@import url("https://use.typekit.net/sok3kzq.css");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Muli', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    position: relative;
+    flex: 0.5;
+    margin: 10px;
+    height: 80vh;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    cursor: pointer;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    font-weight: 400;
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    opacity: 0;
+}
+
+.panel--active {
+    flex: 5;
+}
+
+.panel--active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+    
+    .panel:nth-of-type(-n + 1),
+    .panel:last-of-type {
+        display: none;
+    }
+}
