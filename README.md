@@ -12,4 +12,5 @@
 9. [Мини-игра по скоростной печати](https://olovyannikov.github.io/easy-js-features/typing-game)
 10. [Калькулятор валют онлайн](https://olovyannikov.github.io/easy-js-features/exchange-rate-calculator)
 11. [Expanding Cards](https://olovyannikov.github.io/easy-js-features/expanding-cards)
-12. [Speech Text Reader](https://olovyannikov.github.com/easy-js-features/speech-text-reader)
+12. [Speech Text Reader](https://olovyannikov.github.io/easy-js-features/speech-text-reader)
+12. [Memory Cards App](https://olovyannikov.github.io/easy-js-features/memory-cards)

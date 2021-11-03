@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Memory Cards</title>
+</head>
+<body>
+<button id="clear" class="clear-btn btn">
+    <div class="btn-container">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 98 137">
+        <path d="M75.6 44.8v73c0 3.4-2.8 6.2-6.2 6.2H21.3c-3.4 0-6.2-2.8-6.2-6.2v-73h60.5zm-15.7 8.1v62.8h3.6V52.9h-3.6zm-16.3 0v62.8h3.6V52.9h-3.6zm-16.3 0v62.8h3.6V52.9h-3.6zm4-25v-5.2c0-3.3 2.6-5.9 5.9-5.9h16.4c3.3 0 5.9 2.6 5.9 5.9v5.2h18.1c3.4 0 6.2 2.8 6.2 6.2v4.3H7V34c0-3.4 2.8-6.2 6.2-6.2h18.1v.1zm5.9-7.1c-1 0-1.8.8-1.8 1.8v5.2h20.1v-5.2c0-1-.8-1.8-1.8-1.8H37.2z"/>
+            <path fill="none" d="M0 0h98v137H0z"/></svg>
+        <span>Clear Cards</span>
+    </div>
+</button>
+<header class="header">
+    <h1>Memory Cards</h1>
+    <button id="show" class="btn btn-small header__btn">
+        <div class="btn-container">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path d="M16 29a13 13 0 1 1 13-13 13 13 0 0 1-13 13Zm0-24a11 11 0 1 0 11 11A11 11 0 0 0 16 5Z"/>
+                    <path d="M16 23a1 1 0 0 1-1-1V10a1 1 0 0 1 2 0v12a1 1 0 0 1-1 1Z"/>
+                    <path d="M22 17H10a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2Z"/>
+                </g>
+                <path fill="none" d="M0 0h32v32H0z"/>
+            </svg>
+            <span>Add New Card</span>
+        </div>
+    </button>
+</header>
+
+<main>
+    <div id="cards-container" class="cards"></div>
+    <nav class="cards__nav nav">
+        <button id="prev" class="nav__button btn">
+            <div class="btn-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20">
+                    <path d="M17 10H1m0 0 8.062-8.062M1 10l8.062 8.062" stroke-width="2" stroke="#000" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </button>
+        <p id="current"></p>
+        <button id="next" class="nav__button btn">
+            <div class="btn-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20">
+                    <path d="M17 10H1m0 0 8.062-8.062M1 10l8.062 8.062" stroke-width="2" stroke="#000" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </button>
+    </nav>
+
+    <div id="add-container" class="add-container">
+        <header class="add-container__header">
+            <h2>Add New Card</h2>
+            <button id="hide" class="btn btn-small btn-text btn-close">
+                <div class="btn-container">
+                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd"
+                         clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="m32.033 29.19 15.55-15.55 2.863 2.863-15.55 15.55 15.55 15.55-2.863 2.863-15.55-15.55-15.55 15.55-2.863-2.863 15.55-15.55-15.55-15.55 2.863-2.863 15.55 15.55Z" id="a"/></defs>
+                        <path fill="none" d="M-448-64H832v800H-448z"/>
+                        <use xlink:href="#a"/>
+                        <use xlink:href="#a"/>
+                    </svg>
+                </div>
+            </button>
+        </header>
+        <div class="form-group">
+            <label for="question">Question</label>
+            <textarea id="question" placeholder="Enter question..."></textarea>
+        </div>
+        <div class="form-group">
+            <label for="answer">Question</label>
+            <textarea id="answer" placeholder="Enter answer..."></textarea>
+        </div>
+
+        <button class="btn add-btn" id="add-card">
+            <div class="btn-container">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd"
+                     clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="m32.033 29.19 15.55-15.55 2.863 2.863-15.55 15.55 15.55 15.55-2.863 2.863-15.55-15.55-15.55 15.55-2.863-2.863 15.55-15.55-15.55-15.55 2.863-2.863 15.55 15.55Z" id="a"/></defs>
+                    <path fill="none" d="M-448-64H832v800H-448z"/>
+                    <use xlink:href="#a"/>
+                    <use xlink:href="#a"/></svg>
+                <span>Add Card</span>
+            </div>
+        </button>
+    </div>
+</main>
+<script src="./script.js"></script>
+</body>
+</html>

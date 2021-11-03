@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,500,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Lato", "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+    background-color: #fff;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    font: inherit;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.btn-small {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.btn-text {
+    border: 0;
+    background-color: transparent;
+}
+
+.clear-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.btn-container {
+    position: relative;
+    padding: 0 0 0 20px;
+}
+
+.btn svg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+}
+
+.clear-btn svg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+}
+
+.clear-btn span {
+    padding-top: 3px;
+    display: block;
+}
+
+.header {
+    position: relative;
+}
+
+.header__btn {
+    position: absolute;
+    right: 0;
+    transform: translate(120%, -200%);
+    background-color: #fff;
+    padding: 12px 14px;
+    z-index: 20;
+}
+
+.cards {
+    perspective: 1000px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    max-width: 100%;
+}
+
+.cards__card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    font-size: 1.5em;
+    transform: translateX(50%) rotateY(-10deg);
+    transition: transform 0.4s ease-out, opacity 0.4s ease;
+}
+
+.card--active {
+    opacity: 1;
+    cursor: pointer;
+    z-index: 10;
+    transform: translateX(0) rotateY(0);
+}
+
+.card--left {
+    transform: translateX(-50%) rotateY(10deg);
+}
+
+.card__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease;
+}
+
+.card__inner p {
+    padding: 0 16px;
+}
+
+.card--show-answer .card__inner {
+    transform: rotateX(180deg);
+}
+
+.card__inner-front,
+.card__inner-back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.card__inner-front {
+    transform: rotateX(0);
+    z-index: 2;
+}
+
+.card__inner-back {
+    transform: rotateX(180deg);
+}
+
+.card__inner-front::after,
+.card__inner-back::after {
+    content: "Flip";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding-left: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ddd;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' xml:space='preserve'%3E%3Cpath d='M2.083 9H0v5l1.481-1.361A8.001 8.001 0 0 0 15.938 9h-2.021A6.001 6.001 0 0 1 2.97 11.271L5.441 9H2.083zM8 0A8.001 8.001 0 0 0 .062 7h2.021a6.001 6.001 0 0 1 11.041-2.124L11 7h5V2l-1.432 1.432A7.988 7.988 0 0 0 8 0z' fill='%23dddddd'/%3E%3C/svg%3E");
+}
+
+.nav {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__button {
+    border: 0;
+    background-color: transparent;
+}
+
+.nav__button#next {
+    transform: rotate(180deg);
+}
+
+.nav p {
+    margin: 0 25px;
+}
+
+.add-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    border-top: 2px solid #eee;
+    transition: 0.3s ease;
+}
+
+.add-container__header {
+    position: relative;
+}
+
+.add-container--show {
+    opacity: 1;
+    z-index: 25;
+}
+
+.add-container h2 {
+    margin: 10px 0;
+}
+
+.add-container label {
+    margin: 20px 0 10px;
+    display: block;
+}
+
+.add-container textarea {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 12px;
+    min-width: 300px;
+    width: 100%;
+}
+
+.add-btn {
+    margin-top: 20px;
+}
+
+.add-btn svg {
+    transform: rotate(45deg) translateY(-25%) translateX(-50%);
+}
+
+.btn-close {
+    top: 12px;
+    right: -25%;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+.btn-close .btn-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-42%, -50%);
+}
