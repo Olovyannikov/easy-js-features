@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Lyrics Search App</title>
+</head>
+<body>
+<header class="header">
+    <h1 class="header__title">Lyrics Search</h1>
+    <form class="header__form search-form" id="form">
+        <input type="text" id="search" class="search-form__input" placeholder="Enter artist or song name...">
+        <button type="submit" class="search-form__button">Search</button>
+    </form>
+</header>
+<main class="main">
+    <section class="result">
+        <div id="result" class="container result__container">
+            <p>Results will be displayed here</p>
+        </div>
+    </section>
+    <section class="more">
+        <div id="more" class="container more__container"></div>
+    </section>
+</main>
+
+<script src="./script.js"></script>
+</body>
+</html>

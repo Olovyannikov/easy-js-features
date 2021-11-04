@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+    background-color: #fff;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    background-color: #8d56fd;
+    border-radius: 10px;
+    color: #fff;
+    padding: 4px 10px;
+}
+
+.container {
+    margin: 30px auto;
+    max-width: 500px;
+    width: 100%;
+    padding: 16px;
+}
+
+.title {
+    font-weight: 300;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-image: url("./img/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.header > * {
+    z-index: 1;
+}
+
+.header__title {
+    margin: 0 0 30px;
+}
+
+.search-form {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 16px;
+}
+
+.search-form__input {
+    width: 100%;
+    padding: 14.5px 30px;
+    border: 0;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.search-form__button {
+    position: absolute;
+    top: 2px;
+    right: calc(16px + 2px);
+    padding: 13px 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1rem;
+    background-color: #e056fd;
+}
+
+.result {
+
+}
+
+.more {
+
+}
+
+.more__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.songs__item {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result__container h2 {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
