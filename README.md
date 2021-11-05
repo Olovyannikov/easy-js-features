@@ -15,3 +15,5 @@
 12. [Speech Text Reader](https://olovyannikov.github.io/easy-js-features/speech-text-reader)
 13. [Memory Cards App](https://olovyannikov.github.io/easy-js-features/memory-cards)
 14. [Lyrics Search App](https://olovyannikov.github.io/easy-js-features/lyrics-search)
+15. [Relaxer App](https://olovyannikov.github.io/easy-js-features/relaxer-app)
+16. [Breakout Game App](https://olovyannikov.github.io/easy-js-features/breakout-game)
