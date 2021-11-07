@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    background-image: url("./img/new-year.jpeg");
+    background-image: -webkit-image-set(
+            url("./img/new-year.webp") 1x,
+            url("./img/new-year.jpeg") 1x
+    );
+    background-image: image-set(
+            url("./img/new-year.webp") 1x,
+            url("./img/new-year.jpeg") 1x
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+body > * {
+    z-index: 1;
+}
+
+h1 {
+    margin: -80px 0 40px;
+    font-size: 60px;
+}
+
+.year {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    font-size: 200px;
+    opacity: 0.2;
+}
+
+.countdown {
+    display: none;
+    gap: 15px;
+    transform: scale(2);
+}
+
+.countdown.show {
+    display: flex;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time h2 {
+    margin: 0 0 5px;
+}
+
+#loading {
+    margin-top: -45px;
+    height: 90px;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .countdown {
+        gap: 5px;
+    }
+
+    .time h2 {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .time small {
+        font-size: 10px;
+    }
+}

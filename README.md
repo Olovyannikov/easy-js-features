@@ -17,3 +17,5 @@
 14. [Lyrics Search App](https://olovyannikov.github.io/easy-js-features/lyrics-search)
 15. [Relaxer App](https://olovyannikov.github.io/easy-js-features/relaxer-app)
 16. [Breakout Game App](https://olovyannikov.github.io/easy-js-features/breakout-game)
+17. [New Year Countdown](https://olovyannikov.github.io/easy-js-features/new-year-countdown)
+17. [Drag-n-Drop](https://olovyannikov.github.io/easy-js-features/drag-n-drop)
