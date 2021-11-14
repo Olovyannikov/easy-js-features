@@ -1,0 +1,165 @@
+/* Scaffolding */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+    color: #222;
+    background-color: #333;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    padding: 50px;
+    min-height: 100vh;
+    background-color: #fafafa;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: top left;
+}
+
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+
+.circle__wrapper {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle__controls {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ff7979;
+    transition: transform 0.5s linear;
+}
+
+.circle__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+.circle__button  svg {
+    fill: #fff;
+    width: 26px;
+    height: 26px;
+}
+
+.circle__controls button:focus {
+    outline: none;
+}
+
+.circle__open-btn {
+    left: 60%;
+}
+
+.circle__close-btn {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.circle__content {
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.circle__content h1 {
+    margin: 0;
+}
+
+.circle__content small {
+    font-style: italic;
+    color: #555;
+}
+
+.circle__content p {
+    color: #333;
+    line-height: 1.5;
+}
+
+.container.show-nav .circle__controls {
+    transform: rotate(-70deg);
+}
+
+.container.show-nav + .nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+.nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+.nav ul {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.nav ul li {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+}
+
+.nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+.nav ul li + li + li {
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+.nav ul li svg {
+    width: 20px;
+    height: 20px;
+}

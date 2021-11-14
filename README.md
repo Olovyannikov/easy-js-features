@@ -20,3 +20,5 @@
 17. [New Year Countdown](https://olovyannikov.github.io/easy-js-features/new-year-countdown)
 18. [Drag-n-Drop](https://olovyannikov.github.io/easy-js-features/drag-n-drop)
 19. [Speak Number Guess](https://olovyannikov.github.io/easy-js-features/speak-number-guess)
+20. [Progress Steps](https://olovyannikov.github.io/easy-js-features/progress-steps)
+21. [Rotating Navigation](https://olovyannikov.github.io/easy-js-features/rotating-navigation)

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rotating Navigation</title>
+</head>
+<body>
+<div class="container">
+    <div class="circle__wrapper">
+        <div class="circle__controls">
+            <button id="nav-close" class="circle__button circle__close-btn">
+
+                <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                    <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/>
+                </svg>
+            </button>
+            <button id="nav-open" class="circle__button circle__open-btn">
+                <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                    <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="circle__content">
+        <h1>Amazing Article</h1>
+        <small>Florin Pop</small>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ea eius error fugit hic neque odio, repudiandae sed! Deleniti deserunt error illum laboriosam laudantium nesciunt, possimus repellat sapiente ullam ut?</span><span>Amet animi assumenda modi mollitia reprehenderit. Aliquam, corporis delectus dolore dolores doloribus, dolorum explicabo impedit ipsam iure nostrum officia officiis pariatur, placeat provident quas quis repellat sit tempora ut voluptate.</span><span>Aut consequatur cupiditate dolorem eligendi, exercitationem, harum illum magni nam officia, suscipit tempora tempore totam unde ut velit voluptas voluptatibus. Amet dignissimos distinctio eligendi nulla! Adipisci harum nam necessitatibus quia.</span><span>Accusamus ad amet architecto, aspernatur consectetur corporis dolorum ea eius eos explicabo illum incidunt ipsum laudantium modi molestiae necessitatibus nesciunt nostrum obcaecati provident quae quam quo recusandae similique soluta tempore?</span><span>Beatae commodi cumque deleniti dolores enim ex facere iste maiores nihil nobis, perferendis provident quia quos repellendus sequi, sint soluta vitae. Alias asperiores dicta facere quam. Eos libero similique tenetur.</span>
+        </p>
+        <h3>My Dog</h3>
+        <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" alt="doggy">
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, distinctio ex facere id iusto neque sed tempore veritatis vitae voluptates! Amet animi deleniti eos fuga, iusto minima quos unde voluptatem.</span><span>Alias aliquam aperiam assumenda atque deserunt dolor, ea est fugiat illum ipsam maiores minima non officiis omnis placeat quo reiciendis sit soluta ullam voluptas! Ab, delectus nesciunt! Dicta, quam sequi!</span><span>Aut autem delectus dolores earum eligendi fugit illo ipsam, labore laudantium nam praesentium sed tempore ullam vel vero? Ab adipisci commodi dolor nemo neque nisi odio officiis omnis provident quidem.</span><span>Beatae consequatur consequuntur cum dolorem dolorum explicabo harum id illo incidunt labore neque nulla, ratione reiciendis rerum sit tempore, vero, voluptates. Blanditiis, dolor inventore odio quidem tenetur ut voluptates! Obcaecati!</span><span>Accusantium assumenda aut autem culpa dolores esse hic quae ullam? Animi architecto autem cumque esse magnam numquam perspiciatis sapiente voluptatem! Deleniti facilis hic incidunt placeat quasi quo vel voluptatem voluptates.</span>
+        </p>
+    </div>
+</div>
+<nav class="nav">
+    <ul>
+        <li><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house" class="svg-inline--fa fa-house" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"></path></svg> Home</li>
+        <li><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-large" class="svg-inline--fa fa-user-large" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 288c79.53 0 144-64.47 144-144s-64.47-144-144-144c-79.52 0-144 64.47-144 144S176.5 288 256 288zM351.1 320H160c-88.36 0-160 71.63-160 160c0 17.67 14.33 32 31.1 32H480c17.67 0 31.1-14.33 31.1-32C512 391.6 440.4 320 351.1 320z"></path></svg> About</li>
+        <li><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"></path></svg> Contact</li>
+    </ul>
+</nav>
+
+<script src="./script.js"></script>
+</body>
+</html>
