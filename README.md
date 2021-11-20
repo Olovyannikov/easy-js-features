@@ -23,3 +23,4 @@
 20. [Progress Steps](https://olovyannikov.github.io/easy-js-features/progress-steps)
 21. [Rotating Navigation](https://olovyannikov.github.io/easy-js-features/rotating-navigation)
 22. [Search Widget](https://olovyannikov.github.io/easy-js-features/search-widget)
+23. [Blur Loading](https://olovyannikov.github.io/easy-js-features/blur-loading)
