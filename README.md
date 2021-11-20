@@ -22,3 +22,4 @@
 19. [Speak Number Guess](https://olovyannikov.github.io/easy-js-features/speak-number-guess)
 20. [Progress Steps](https://olovyannikov.github.io/easy-js-features/progress-steps)
 21. [Rotating Navigation](https://olovyannikov.github.io/easy-js-features/rotating-navigation)
+22. [Search Widget](https://olovyannikov.github.io/easy-js-features/search-widget)
