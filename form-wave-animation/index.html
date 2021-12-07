@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form wave animation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Please Login</h2>
+    <form class="form">
+        <div class="form__control form__control--email" id="email">
+            <input required type="text">
+            <label>
+                <span>Email</span>
+            </label>
+        </div>
+        <div class="form__control form__control--password" id="password">
+            <input required type="text">
+            <label>
+                <span>Password</span>
+            </label>
+        </div>
+        <button class="btn">Login</button>
+        <p class="form__text">Don't have an account? <a href="#">Register</a></p>
+    </form>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

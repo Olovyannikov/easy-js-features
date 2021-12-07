@@ -8,7 +8,7 @@ populateUI();
 
 let ticketPrice = +movieSelect.value;
 
-//Save selected movie index and price
+//Save selected movie index.html and price
 
 const setMovieData = (movieIndex, moviePrice) => {
     localStorage.setItem('selectedMovieIndex', movieIndex);
