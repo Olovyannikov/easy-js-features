@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+:root {
+    --background: #e1e1e1;
+    --color-grey-0: #eee;
+    --color-grey-5: #555;
+    --color-grey-9: #999;
+
+    --shadow-s: 1px 1px 3px rgb(0 0 0 / 10%);
+
+    --space-s: 10px;
+    --space-m: 20px;
+    --space-l: 24px;
+
+    --font-alt: "Roboto", sans-serif;
+    --font: "Muli", var(--font-alt);
+
+    --font-size-s: 14px;
+    --font-size-base: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    font-size: var(--font-size-base);
+    line-height: 1.1;
+    background-color: var(--background);
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 0 15px;
+    width: 100%;
+    max-width: 515px;
+    margin: 0 auto;
+}
+
+.key-code__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-s);
+}
+
+.key__value {
+    position: relative;
+    min-width: 150px;
+    padding: var(--space-m);
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--color-grey-9);
+    background-color: var(--color-grey-0);
+    box-shadow: var(--shadow-s);
+    font-size: var(--space-m);
+    text-align: center;
+}
+
+.key__value small {
+    position: absolute;
+    top: calc(var(--space-l) * -1);
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: var(--color-grey-5);
+    font-size: var(--font-size-s);
+}

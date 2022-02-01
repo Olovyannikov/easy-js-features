@@ -29,4 +29,4 @@
 26. [Speak Number Guess Game](https://olovyannikov.github.io/easy-js-features/speak-number-guess)
 27. [Breakout Game App](https://olovyannikov.github.io/easy-js-features/breakout-game)
 28. [Split Landing Page](https://olovyannikov.github.io/easy-js-features/split-landing-page)
-29. [](https://olovyannikov.github.io/easy-js-features/)
+29. [Event Key Codes](https://olovyannikov.github.io/easy-js-features/event-key-codes)
